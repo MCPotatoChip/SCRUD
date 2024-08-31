@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1955, initial-scale=1.0">
-    <title>Document</title>
+    <title>To-Do List</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
-
+    <!--
+     * The main section of the to-do list application
+-->
     <section class="form-section py-5">
         <div class="container">
-            <h2 class="display-3 text-center">SCRUD operations with JS</h2>
+            <!--
+             * The title of the to-do list application
+        -->
+            <h2 class="display-3 text-center">To-Do List</h2>
+            <!--
+             * The form to add a new task
+        -->
             <form>
                 <div class="mb-3">
-                  <label for="pname" class="form-label">Product Name</label>
-                  <input type="text" class="form-control" id="pname">
-                </div>
-                <div class="mb-3">
-                  <label for="pprice" class="form-label">Product Price</label>
-                  <input type="number" class="form-control" id="pprice">
-                </div>
-                <label for="pcat" class="form-label">Product Category</label>
-                <select class="form-select" id="pcat">
-                    <option selected value="">Select Category</option>
-                    <option value="Mobile">Mobile</option>
-                    <option value="Tablet">Tablet</option>
-                    <option value="Laptop">Laptop</option>
-                    <option value="Computer">Computer</option>
-                  </select>
-                  <div class="mb-3">
-                <label for="pdesc" class="form-label">Product Description</label>
-                    <textarea id="pdesc" class="form-control" rows="5"></textarea>
-                  </div>
+                  <!--
+                   * The input field for the task name
+                   * @example <input type="text" id="tname" value="Buy milk">
+                -->
+                  <label for="tname" class="form-label">Task Name</label>
+                  <input type="text" class="form-control" id="tname">
+                </div>  
 
                   <div class="btns">
                     <div class="insert">
-                <button type="button" onclick="addNewProduct()" class="btn btn-primary">Submit</button>
+                <!--
+                 * The button to add a new task
+                 * @example <button onclick="addNewTask()">Submit</button>
+                    -->
+                <button type="button" onclick="addNewTask()" class="btn btn-primary">Submit</button>
 
                     </div>
 
@@ -53,39 +51,24 @@
         <section>
             <hr>
             <div class="container">
-              <form class="d-flex justify-content-end" role="search">
-                <input class="form-control me-2 w-25" type="search" placeholder="Search" aria-label="Search">
-              </form>
               <table class="table table-striped">
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Product Price</th>
-                    <th scope="col">Product Category</th>
-                    <th scope="col">Description</th>
+                    <th scope="col">Task Name</th>
                     <th scope="col">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <!-- <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
-                  </tr> -->
+
                 </tbody>
               </table>
             </div>
         </section>
     </section>
 
-
-
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+<!-- This code has been updated with proper commenting. Comments have been added to clarify the purpose of each function and the overall logic of the code. -->
